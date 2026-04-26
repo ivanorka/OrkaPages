@@ -150,31 +150,6 @@
         content: "→";
       }
 
-      .meta {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-        margin: 38px 0 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .meta li {
-        min-height: 88px;
-        padding: 18px;
-        border-top: 1px solid var(--line);
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 14px;
-        line-height: 1.45;
-      }
-
-      .meta b {
-        display: block;
-        margin-bottom: 6px;
-        color: var(--white);
-        font-size: 15px;
-      }
-
       @media (max-width: 760px) {
         .links {
           grid-template-columns: 1fr;
@@ -182,10 +157,6 @@
 
         a {
           min-height: 216px;
-        }
-
-        .meta {
-          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -203,7 +174,7 @@
           <a href="./orka-investor-web/">
             <div>
               <span class="card-kicker">Prezentacija 01</span>
-              <strong>Investor Ready One Pager</strong>
+              <strong>ORKA Financijski plan</strong>
               <span class="card-copy">
                 Sažeti pregled poslovnog modela, tržišne prilike, financijskog potencijala
                 i plana razvoja za investitorske razgovore.
@@ -214,7 +185,7 @@
           <a href="./orka-sales-plan-web/">
             <div>
               <span class="card-kicker">Prezentacija 02</span>
-              <strong>Sales Operating Plan 2028</strong>
+              <strong>ORKA Prodajni plan</strong>
               <span class="card-copy">
                 Operativni plan prodaje s prioritetima, ritmom provedbe i okvirom za
                 skaliranje komercijalnih aktivnosti do 2028.
@@ -223,11 +194,6 @@
             <span class="card-action">Otvori sales plan prezentaciju</span>
           </a>
         </div>
-        <ul class="meta" aria-label="Sadržaj stranice">
-          <li><b>Brzi izbor</b>Dvije prezentacije su odvojene kako bi se odmah otvorio pravi materijal.</li>
-          <li><b>Jasan kontekst</b>Investor web je za vanjske razgovore, sales plan za provedbu i fokus tima.</li>
-          <li><b>GitHub Pages</b>Root stranica služi kao pregledan početak za cijeli ORKA web paket.</li>
-        </ul>
       </div>
     </main>
   </body>
