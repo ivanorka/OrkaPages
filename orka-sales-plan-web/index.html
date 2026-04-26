@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORKA + TrueForce | Sales OS 2028</title>
+    <meta
+      name="description"
+      content="Investor-ready ORKA + TrueForce sales operating plan za razdoblje 05/2026 - 2028."
+    />
+    <style>
+      :root {
+        --navy: #071b2f;
+        --navy-2: #0d2d49;
+        --teal: #0f8190;
+        --cyan: #78def0;
+        --green: #0b8b63;
+        --gold: #f0c95a;
+        --ink: #102033;
+        --muted: #66758a;
+        --line: #d8e4ee;
+        --paper: #f3f8fb;
+        --white: #ffffff;
+        --radius: 8px;
+        --shadow: 0 22px 70px rgba(7, 27, 47, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(7, 27, 47, 0.92);
+        color: var(--white);
+        backdrop-filter: blur(16px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1180px, calc(100% - 32px));
+        min-height: 68px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 900;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border-radius: var(--radius);
+        background: var(--teal);
+        color: var(--white);
+        font-size: 15px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 22px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+        font-weight: 760;
+      }
+
+      .nav-links a:hover {
+        color: var(--white);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: var(--white);
+        background:
+          radial-gradient(circle at 88% 18%, rgba(15, 129, 144, 0.62), transparent 34%),
+          linear-gradient(135deg, var(--navy), var(--navy-2));
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: clamp(92px, 11vw, 210px);
+        background: linear-gradient(180deg, #14849c, #0e6f84);
+        content: "";
+      }
+
+      .hero-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 0.96fr) minmax(360px, 0.74fr);
+        gap: 46px;
+        align-items: center;
+        width: min(1180px, calc(100% - 32px));
+        min-height: calc(100vh - 68px);
+        margin: 0 auto;
+        padding: 74px 0 54px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        color: var(--cyan);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 30px;
+        height: 3px;
+        border-radius: 999px;
+        background: currentColor;
+        content: "";
+      }
+
+      h1 {
+        max-width: 820px;
+        margin-bottom: 26px;
+        font-size: clamp(52px, 7vw, 96px);
+        line-height: 0.92;
+        letter-spacing: 0;
+      }
+
+      .hero-lead {
+        max-width: 760px;
+        margin-bottom: 34px;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: clamp(19px, 2vw, 25px);
+        line-height: 1.45;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 42px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius);
+        background: var(--cyan);
+        color: var(--navy);
+        font-weight: 900;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--white);
+      }
+
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .metric {
+        min-height: 132px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .metric span {
+        display: block;
+        margin-bottom: 13px;
+        color: rgba(255, 255, 255, 0.66);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: clamp(27px, 3vw, 37px);
+        line-height: 1;
+      }
+
+      .metric small {
+        display: block;
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 14px;
+      }
+
+      .preview {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.28);
+      }
+
+      .preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .preview-caption {
+        padding: 16px 18px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section.dark {
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .inner {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 78px 0;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.94fr) minmax(280px, 0.56fr);
+        gap: 34px;
+        align-items: end;
+        margin-bottom: 34px;
+      }
+
+      .kicker {
+        margin-bottom: 13px;
+        color: var(--teal);
+        font-size: 13px;
+        font-weight: 950;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .dark .kicker {
+        color: var(--cyan);
+      }
+
+      .section-title {
+        max-width: 820px;
+        margin-bottom: 0;
+        font-size: clamp(34px, 4.3vw, 58px);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .section-copy {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .dark .section-copy {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .thesis-grid,
+      .offers,
+      .segments,
+      .centers,
+      .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .thesis,
+      .offer,
+      .segment,
+      .center,
+      .kpi-card {
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 12px 32px rgba(7, 27, 47, 0.07);
+      }
+
+      .thesis strong {
+        display: block;
+        margin-bottom: 28px;
+        color: var(--teal);
+        font-size: 38px;
+        line-height: 1;
+      }
+
+      .thesis h3,
+      .offer h3,
+      .segment h3,
+      .center h3,
+      .kpi-card h3 {
+        margin-bottom: 12px;
+        font-size: 23px;
+      }
+
+      .thesis p,
+      .segment p,
+      .center p,
+      .kpi-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        line-height: 1.58;
+      }
+
+      .roadmap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .phase {
+        min-height: 280px;
+        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .phase span {
+        display: block;
+        margin-bottom: 30px;
+        color: var(--cyan);
+        font-size: 14px;
+        font-weight: 950;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .phase h3 {
+        margin-bottom: 14px;
+        font-size: 28px;
+      }
+
+      .phase p {
+        margin-bottom: 22px;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.56;
+      }
+
+      .phase strong {
+        color: var(--white);
+        font-size: 24px;
+      }
+
+      .pipeline-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr);
+        gap: 26px;
+        align-items: start;
+      }
+
+      .pipeline-chart {
+        padding: 28px;
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .pipe-row {
+        display: grid;
+        grid-template-columns: 130px 1fr 110px;
+        gap: 16px;
+        align-items: center;
+        min-height: 70px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .pipe-row:last-child {
+        border-bottom: 0;
+      }
+
+      .pipe-label {
+        font-weight: 900;
+      }
+
+      .pipe-track {
+        height: 18px;
+        border-radius: 999px;
+        background: #e6eef4;
+      }
+
+      .pipe-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--teal), var(--cyan));
+      }
+
+      .pipe-value {
+        color: var(--teal);
+        font-weight: 950;
+        text-align: right;
+      }
+
+      .rules {
+        padding: 28px;
+        border-radius: var(--radius);
+        background: var(--navy);
+        color: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .rules h3 {
+        margin-bottom: 18px;
+        color: var(--cyan);
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .rules ul,
+      .offer ul,
+      .cadence ul {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .rules li,
+      .offer li,
+      .cadence li {
+        position: relative;
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.74);
+        line-height: 1.45;
+      }
+
+      .offer li {
+        color: var(--muted);
+      }
+
+      .rules li::before,
+      .offer li::before,
+      .cadence li::before {
+        position: absolute;
+        left: 0;
+        color: var(--cyan);
+        content: "›";
+        font-weight: 950;
+      }
+
+      .offer-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .offer-head span {
+        color: var(--teal);
+        font-weight: 950;
+        white-space: nowrap;
+      }
+
+      .segment {
+        min-height: 230px;
+      }
+
+      .segment b {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        margin-bottom: 18px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #e6f6f8;
+        color: var(--teal);
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .centers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .center-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .center-list span {
+        padding: 12px;
+        border-radius: var(--radius);
+        background: #edf5f7;
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 760;
+      }
+
+      .kpi-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .kpi-card {
+        min-height: 220px;
+        padding: 22px;
+      }
+
+      .kpi-card h3 {
+        font-size: 18px;
+      }
+
+      .cadence-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .cadence {
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .cadence h3 {
+        margin-bottom: 18px;
+        color: var(--cyan);
+        font-size: 25px;
+      }
+
+      .implementation {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .step {
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+      }
+
+      .step span {
+        display: block;
+        margin-bottom: 20px;
+        color: var(--teal);
+        font-size: 34px;
+        font-weight: 950;
+      }
+
+      .step ul {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .closing {
+        padding: 36px;
+        border-radius: var(--radius);
+        background: var(--white);
+        color: var(--ink);
+      }
+
+      .closing p {
+        max-width: 1040px;
+        margin-bottom: 0;
+        font-size: clamp(26px, 3.4vw, 44px);
+        font-weight: 950;
+        line-height: 1.12;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        background: var(--white);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 1040px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero::before {
+          width: 74px;
+        }
+
+        .hero-inner,
+        .section-head,
+        .pipeline-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-inner {
+          min-height: auto;
+          padding-top: 54px;
+        }
+
+        .hero-metrics,
+        .thesis-grid,
+        .roadmap,
+        .offers,
+        .segments,
+        .centers,
+        .kpi-grid,
+        .cadence-grid,
+        .implementation {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .inner {
+          padding: 58px 0;
+        }
+
+        .metric,
+        .thesis,
+        .phase,
+        .pipeline-chart,
+        .rules,
+        .offer,
+        .segment,
+        .center,
+        .kpi-card,
+        .cadence,
+        .step,
+        .closing {
+          padding: 20px;
+        }
+
+        .pipe-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 16px 0;
+        }
+
+        .pipe-value {
+          text-align: left;
+        }
+
+        .center-list {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-inner {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav" aria-label="Navigacija">
+        <a class="brand" href="#top">
+          <span class="brand-mark">TF</span>
+          <span>ORKA + TrueForce</span>
+        </a>
+        <div class="nav-links">
+          <a href="#thesis">Teza</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#offers">Ponude</a>
+          <a href="#kpi">KPI</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">Sales operating plan · 05/2026 - 2028</p>
+            <h1>ORKA 2028 - Sales Plan</h1>
+            <p class="hero-lead">
+              ORKA zadržava ERP core. TrueForce ubrzava web, eCommerce, mobile,
+              custom apps i AI/BSS prodaju kroz profitne centre, CRM disciplinu
+              i mjesečni P&L po centru.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#pipeline">Pipeline disciplina</a>
+              <a class="button secondary" href="#implementation">30-60-90 plan</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric">
+                <span>05-12 / 2026 prihod</span>
+                <strong>404k EUR</strong>
+                <small>realistična projekcija</small>
+              </div>
+              <div class="metric">
+                <span>05-12 / 2026 rezultat</span>
+                <strong>+53,6k EUR</strong>
+                <small>pozitivan operativni rezultat</small>
+              </div>
+              <div class="metric">
+                <span>2028 cilj</span>
+                <strong>1,4M EUR</strong>
+                <small>realistični prihod</small>
+              </div>
+            </div>
+          </div>
+
+          <figure class="preview">
+            <img
+              src="assets/ORKA_TrueForce_sales_operating_plan_05-2026_2028.pdf.png"
+              alt="Preview izvornog ORKA TrueForce sales operating plana"
+            />
+            <figcaption class="preview-caption">
+              Izvorni plan pretvoren u web one-pager za klijentski i investitorski prikaz.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="thesis">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Core narrative</p>
+              <h2 class="section-title">Cilj nije samo veći prihod. Cilj je upravljiv rast.</h2>
+            </div>
+            <p class="section-copy">
+              Plan uvodi profitne centre, troškovne centre, CRM pravila, delivery
+              nadzor i KPI ritam koji prodaju veže uz maržu, cash i kapacitet.
+            </p>
+          </div>
+          <div class="thesis-grid">
+            <article class="thesis">
+              <strong>01</strong>
+              <h3>ORKA ERP Core</h3>
+              <p>ERP implementacije, migracije, integracije, radni nalozi, proizvodnja, skladište i poslovni procesi.</p>
+            </article>
+            <article class="thesis">
+              <strong>02</strong>
+              <h3>TrueForce Engine</h3>
+              <p>Web, eCommerce, mobile, custom aplikacije i growth prodaja za bržu konverziju manjih i srednjih prilika.</p>
+            </article>
+            <article class="thesis">
+              <strong>03</strong>
+              <h3>AI / BSS / Warroom</h3>
+              <p>AI izvješća, asistenti, CRM, ticketing, operativni cockpit i bolja tržišna diferencijacija.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="roadmap">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Roadmap phases</p>
+              <h2 class="section-title">Od stabilizacije portfelja do institucionalnog sales sustava.</h2>
+            </div>
+            <p class="section-copy">
+              Svaka faza ima drugačiji fokus: prvo dokaz prodajnog modela,
+              zatim ponovljive ponude, a na kraju P&L i valuation story po centru.
+            </p>
+          </div>
+          <div class="roadmap">
+            <article class="phase">
+              <span>05-12 / 2026</span>
+              <h3>Stabilizacija</h3>
+              <p>Zatvaranje postojećeg portfelja, CRM disciplina, proof of sales model i početak profitnih centara.</p>
+              <strong>404k EUR prihod</strong>
+            </article>
+            <article class="phase">
+              <span>2027</span>
+              <h3>Skaliranje</h3>
+              <p>Ponovljive ponude, 3x pipeline coverage, jači recurring, vertikale i standardizirani delivery.</p>
+              <strong>900k EUR prihod</strong>
+            </article>
+            <article class="phase">
+              <span>2028</span>
+              <h3>Institucionalizacija</h3>
+              <p>Vlastiti P&L po centru, management dashboard, stabilan sustav upravljanja i valuation story.</p>
+              <strong>1,4M EUR prihod</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pipeline">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Pipeline discipline</p>
+              <h2 class="section-title">Sales plan traži 3x coverage i obaveznu maržnu provjeru prije ponude.</h2>
+            </div>
+            <p class="section-copy">
+              Weighted pipeline računa se kao vrijednost x vjerojatnost x termin
+              zatvaranja. Ponuda iznad 10.000 EUR ne izlazi bez provjere marže,
+              scopea i delivery kapaciteta.
+            </p>
+          </div>
+          <div class="pipeline-grid">
+            <div class="pipeline-chart">
+              <div class="pipe-row">
+                <div class="pipe-label">05-12 / 2026</div>
+                <div class="pipe-track"><div class="pipe-fill" style="width: 29%"></div></div>
+                <div class="pipe-value">1,2M EUR</div>
+              </div>
+              <div class="pipe-row">
+                <div class="pipe-label">2027</div>
+                <div class="pipe-track"><div class="pipe-fill" style="width: 64%"></div></div>
+                <div class="pipe-value">2,7M EUR</div>
+              </div>
+              <div class="pipe-row">
+                <div class="pipe-label">2028</div>
+                <div class="pipe-track"><div class="pipe-fill" style="width: 100%"></div></div>
+                <div class="pipe-value">4,2M EUR</div>
+              </div>
+            </div>
+            <aside class="rules">
+              <h3>Obvezna CRM polja</h3>
+              <ul>
+                <li>profitni centar i odgovorna osoba</li>
+                <li>vrijednost, vjerojatnost i faza prodaje</li>
+                <li>očekivana naplata i delivery trošak</li>
+                <li>sljedeći korak i termin zatvaranja</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="offers">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Offer architecture</p>
+              <h2 class="section-title">Ponude su složene kao ulaz, core projekt i recurring prihod.</h2>
+            </div>
+            <p class="section-copy">
+              Entry ponude otvaraju discovery i kvalifikaciju. Core ponude nose
+              prihod i maržu. Recurring ponude grade stabilnost i valuation story.
+            </p>
+          </div>
+          <div class="offers">
+            <article class="offer">
+              <div class="offer-head">
+                <h3>Entry offers</h3>
+                <span>2k-15k</span>
+              </div>
+              <ul>
+                <li>ERP / Business Screening: 5k - 15k EUR</li>
+                <li>AI Readiness Workshop: 3k - 8k EUR</li>
+                <li>eCommerce Audit: 2k - 5k EUR</li>
+                <li>CRM / Sales Audit: 3k - 10k EUR</li>
+                <li>Production Assessment: 5k - 12k EUR</li>
+              </ul>
+            </article>
+            <article class="offer">
+              <div class="offer-head">
+                <h3>Core offers</h3>
+                <span>15k-150k</span>
+              </div>
+              <ul>
+                <li>ERP implementacija: 25k - 150k EUR</li>
+                <li>ERP migracija: 20k - 120k EUR</li>
+                <li>BSS / CRM / Ticketing: 15k - 100k EUR</li>
+                <li>eCommerce platforma: 15k - 80k EUR</li>
+                <li>Mobile / custom app: 20k - 150k EUR</li>
+              </ul>
+            </article>
+            <article class="offer">
+              <div class="offer-head">
+                <h3>Recurring</h3>
+                <span>300-6k / mj.</span>
+              </div>
+              <ul>
+                <li>ERP održavanje: 500 - 5.000 EUR mjesečno</li>
+                <li>SLA support: 750 - 6.000 EUR mjesečno</li>
+                <li>Managed AI / Reporting: 500 - 4.000 EUR mjesečno</li>
+                <li>Growth retainer: 800 - 5.000 EUR mjesečno</li>
+                <li>Cloud / DevOps care: 300 - 2.500 EUR mjesečno</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Segments</p>
+              <h2 class="section-title">Segmenti su vezani uz konkretan poslovni problem i dokazivu ponudu.</h2>
+            </div>
+            <p class="section-copy">
+              Svaki segment ima svoj ulazni problem, logičan offer i put prema
+              core projektu ili recurring odnosu.
+            </p>
+          </div>
+          <div class="segments">
+            <article class="segment">
+              <b>Industrija</b>
+              <h3>Proizvodnja</h3>
+              <p>Radni nalozi, proizvodnja, skladište, MES / IoT integracije i upravljački izvještaji.</p>
+            </article>
+            <article class="segment">
+              <b>Commerce</b>
+              <h3>Distribucija i eCommerce</h3>
+              <p>Nepovezani webshop, ERP, skladište, fakture, CRM i marketing kao integracijski problem.</p>
+            </article>
+            <article class="segment">
+              <b>BSS</b>
+              <h3>Uslužne i projektne tvrtke</h3>
+              <p>Pipeline, naplata, profitabilnost po klijentu i nedostatak operativnog BSS-a.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Profit & cost centers</p>
+              <h2 class="section-title">Model upravljanja dijeli rast na profitne i troškovne centre.</h2>
+            </div>
+            <p class="section-copy">
+              Management mora mjesečno vidjeti prihod, maržu, pipeline i trošak po
+              centru, ne samo ukupni rezultat kompanije.
+            </p>
+          </div>
+          <div class="centers">
+            <article class="center">
+              <h3>Profitni centri</h3>
+              <div class="center-list">
+                <span>PC1 · ORKA ERP Core</span>
+                <span>PC2 · Screening & Consulting</span>
+                <span>PC3 · AI / BSS / Warroom</span>
+                <span>PC4 · Web / eCommerce</span>
+                <span>PC5 · Mobile / Custom Apps</span>
+                <span>PC6 · Recurring / Managed Services</span>
+                <span>PC7 · Strategic / EU / Innovation</span>
+              </div>
+            </article>
+            <article class="center">
+              <h3>Troškovni centri</h3>
+              <div class="center-list">
+                <span>CC1 · Management & Governance</span>
+                <span>CC2 · Finance / Controlling</span>
+                <span>CC3 · Sales Operations</span>
+                <span>CC4 · Marketing & Brand</span>
+                <span>CC5 · R&D / Product Core</span>
+                <span>CC6 · Infrastructure / Cloud</span>
+                <span>CC7 · HR / Capability</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kpi">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">KPI hierarchy</p>
+              <h2 class="section-title">KPI sustav povezuje prodaju, marketing, delivery, recurring i cash.</h2>
+            </div>
+            <p class="section-copy">
+              KPI-evi nisu reporting dekoracija. Oni su mehanizam za mjesečne
+              odluke: što skalirati, što ugasiti i gdje povećati cijene.
+            </p>
+          </div>
+          <div class="kpi-grid">
+            <article class="kpi-card">
+              <h3>Company</h3>
+              <p>Prihod, EBITDA / EBIT, bruto marža, cash runway, revenue per FTE.</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Sales</h3>
+              <p>Weighted pipeline, win rate, sales cycle, forecast accuracy, naplaćeni prihod.</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Marketing</h3>
+              <p>MQL, SQL, inbound upiti, cost per lead i case studies.</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Delivery</h3>
+              <p>Planirani vs stvarni sati, kašnjenja, scope creep i change request revenue.</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Recurring</h3>
+              <p>MRR, ARR, churn, NRR, SLA response i support margin.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Governance cadence</p>
+              <h2 class="section-title">Ritam upravljanja drži plan živim svaki tjedan, mjesec i kvartal.</h2>
+            </div>
+            <p class="section-copy">
+              Sales Board, Offer Clinic, Cash & Delivery Review i Monthly Business
+              Review pretvaraju plan u operativnu praksu.
+            </p>
+          </div>
+          <div class="cadence-grid">
+            <article class="cadence">
+              <h3>Tjedno</h3>
+              <ul>
+                <li>Ponedjeljak: Sales Board</li>
+                <li>Srijeda: Offer Clinic</li>
+                <li>Petak: Cash & Delivery Review</li>
+              </ul>
+            </article>
+            <article class="cadence">
+              <h3>Mjesečno</h3>
+              <ul>
+                <li>Monthly Business Review</li>
+                <li>P&L po centru i pipeline po centru</li>
+                <li>marža, DSO, troškovi i odluke</li>
+              </ul>
+            </article>
+            <article class="cadence">
+              <h3>Kvartalno</h3>
+              <ul>
+                <li>što skalirati i što ugasiti</li>
+                <li>gdje zaposliti i koje partnere gurati</li>
+                <li>gdje povećati cijene</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="implementation">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">30-60-90 implementation</p>
+              <h2 class="section-title">Prvih 90 dana mora dati CRM disciplinu, margin estimate i P&L po centru.</h2>
+            </div>
+            <p class="section-copy">
+              Plan nije zamišljen kao dokument, nego kao rollout sustava koji
+              managementu daje prihod, maržu i pipeline po centru.
+            </p>
+          </div>
+          <div class="implementation">
+            <article class="step">
+              <span>30</span>
+              <ul>
+                <li>potvrditi profitne centre</li>
+                <li>uvesti CRM strukturu</li>
+                <li>unijeti sve aktivne prilike</li>
+                <li>definirati rate card</li>
+                <li>uvesti Sales Board i Offer Clinic</li>
+              </ul>
+            </article>
+            <article class="step">
+              <span>60</span>
+              <ul>
+                <li>svi projekti imaju profitni centar</li>
+                <li>novi dealovi imaju margin estimate</li>
+                <li>recurring paketi su definirani</li>
+                <li>prvi mjesečni P&L po centru</li>
+              </ul>
+            </article>
+            <article class="step">
+              <span>90</span>
+              <ul>
+                <li>management vidi prihod, maržu i pipeline po centru</li>
+                <li>voditelji znaju KPI</li>
+                <li>3 case studyja</li>
+                <li>3 vertikalne prodajne priče</li>
+                <li>2027 pipeline kvantificiran</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <div class="inner">
+          <div class="closing">
+            <p>
+              ORKA + TrueForce postaje prodajni i operativni sustav: ERP core,
+              digitalni growth engine i AI/BSS sloj pod jednim KPI ritmom.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <strong>ORKA + TrueForce · Sales Operating Plan</strong>
+        <span>Izvor: ORKA_TrueForce_sales_operating_plan_05-2026_2028 · povjerljivo</span>
+      </div>
+    </footer>
+  </body>
+</html>

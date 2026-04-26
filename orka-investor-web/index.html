@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORKA d.o.o. | Investor Ready One Pager</title>
+    <meta
+      name="description"
+      content="Investor-ready one pager za ORKA d.o.o. s financijskim scenarijima, roadmapom i provedbenim modelom 2026-2028."
+    />
+    <style>
+      :root {
+        --navy: #071b2f;
+        --navy-2: #0d2b46;
+        --blue: #11789a;
+        --cyan: #7bd8ef;
+        --mint: #0e8a65;
+        --gold: #f1c953;
+        --red: #bc3c3c;
+        --ink: #102033;
+        --muted: #64748b;
+        --line: #d8e3ec;
+        --paper: #f4f8fb;
+        --white: #ffffff;
+        --shadow: 0 18px 55px rgba(7, 27, 47, 0.14);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(7, 27, 47, 0.91);
+        color: var(--white);
+        backdrop-filter: blur(16px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1180px, calc(100% - 32px));
+        min-height: 68px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 850;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border-radius: var(--radius);
+        background: var(--blue);
+        color: var(--white);
+        font-size: 16px;
+        letter-spacing: 0;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 14px;
+        font-weight: 720;
+      }
+
+      .nav-links a:hover {
+        color: var(--white);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: var(--white);
+        background:
+          radial-gradient(circle at 88% 12%, rgba(17, 120, 154, 0.55), transparent 34%),
+          linear-gradient(135deg, var(--navy), var(--navy-2));
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: clamp(120px, 12vw, 230px);
+        background: linear-gradient(180deg, #147b9b, #0f6f8e);
+        content: "";
+      }
+
+      .hero-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.8fr);
+        gap: 46px;
+        align-items: center;
+        width: min(1180px, calc(100% - 32px));
+        min-height: calc(100vh - 68px);
+        margin: 0 auto;
+        padding: 72px 0 52px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 22px;
+        color: var(--cyan);
+        font-size: 13px;
+        font-weight: 850;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 30px;
+        height: 3px;
+        border-radius: 999px;
+        background: currentColor;
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin-bottom: 26px;
+        font-size: clamp(48px, 6.6vw, 90px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .hero-lead {
+        max-width: 760px;
+        margin-bottom: 34px;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: clamp(19px, 2vw, 25px);
+        line-height: 1.45;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 46px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: var(--radius);
+        background: var(--cyan);
+        color: var(--navy);
+        font-weight: 850;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--white);
+      }
+
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .metric {
+        min-height: 136px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .metric span {
+        display: block;
+        margin-bottom: 14px;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--white);
+        font-size: clamp(26px, 3vw, 36px);
+        line-height: 1;
+      }
+
+      .metric small {
+        display: block;
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 14px;
+      }
+
+      .deck-preview {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.25);
+      }
+
+      .deck-preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .preview-label {
+        position: absolute;
+        left: 18px;
+        bottom: 18px;
+        padding: 10px 12px;
+        border-radius: var(--radius);
+        background: rgba(7, 27, 47, 0.88);
+        color: var(--white);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section.dark {
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .inner {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 78px 0;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.55fr);
+        gap: 34px;
+        align-items: end;
+        margin-bottom: 34px;
+      }
+
+      .kicker {
+        margin-bottom: 13px;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .dark .kicker {
+        color: var(--cyan);
+      }
+
+      .section-title {
+        max-width: 820px;
+        margin-bottom: 0;
+        font-size: clamp(34px, 4.2vw, 58px);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .section-copy {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .dark .section-copy {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .thesis-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .thesis {
+        min-height: 240px;
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 12px 32px rgba(7, 27, 47, 0.07);
+      }
+
+      .thesis-number {
+        display: block;
+        margin-bottom: 34px;
+        color: var(--blue);
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .thesis h3 {
+        margin-bottom: 10px;
+        font-size: 23px;
+      }
+
+      .thesis p {
+        margin-bottom: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .scenario-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.65fr);
+        gap: 26px;
+        align-items: start;
+      }
+
+      .table-wrap {
+        overflow: auto;
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 720px;
+      }
+
+      th {
+        padding: 18px 20px;
+        background: var(--navy);
+        color: var(--white);
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+      }
+
+      td {
+        padding: 20px;
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+        font-size: 16px;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .positive {
+        color: var(--mint);
+        font-weight: 900;
+      }
+
+      .negative {
+        color: var(--red);
+        font-weight: 900;
+      }
+
+      .status {
+        display: inline-flex;
+        min-height: 30px;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #e8f6f1;
+        color: var(--mint);
+        font-size: 13px;
+        font-weight: 850;
+        white-space: nowrap;
+      }
+
+      .status.warn {
+        background: #faeaea;
+        color: var(--red);
+      }
+
+      .insight-panel {
+        padding: 28px;
+        border-radius: var(--radius);
+        background: var(--navy);
+        color: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .insight-panel h3 {
+        margin-bottom: 18px;
+        color: var(--cyan);
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .insight-panel p {
+        margin-bottom: 22px;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.55;
+      }
+
+      .mini-metrics {
+        display: grid;
+        gap: 12px;
+      }
+
+      .mini-metric {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .mini-metric span {
+        color: rgba(255, 255, 255, 0.62);
+      }
+
+      .mini-metric strong {
+        color: var(--white);
+      }
+
+      .positioning {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .pillar {
+        min-height: 220px;
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .pillar strong {
+        display: block;
+        margin-bottom: 28px;
+        color: var(--cyan);
+        font-size: 36px;
+      }
+
+      .pillar h3 {
+        margin-bottom: 12px;
+        font-size: 24px;
+      }
+
+      .pillar p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.55;
+      }
+
+      .growth-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 30px;
+        align-items: start;
+      }
+
+      .growth-chart {
+        padding: 28px;
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .bars {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        align-items: end;
+        height: 300px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .bar-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        align-items: end;
+        height: 100%;
+      }
+
+      .bar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 36px;
+        padding-top: 10px;
+        border-radius: 8px 8px 0 0;
+        background: var(--blue);
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 900;
+        writing-mode: vertical-rl;
+      }
+
+      .bar.optimistic {
+        background: var(--gold);
+        color: var(--navy);
+      }
+
+      .bar.y2026.realistic {
+        height: 26%;
+      }
+
+      .bar.y2026.optimistic {
+        height: 36%;
+      }
+
+      .bar.y2027.realistic {
+        height: 45%;
+      }
+
+      .bar.y2027.optimistic {
+        height: 60%;
+      }
+
+      .bar.y2028.realistic {
+        height: 70%;
+      }
+
+      .bar.y2028.optimistic {
+        height: 100%;
+      }
+
+      .bar-labels {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        color: var(--muted);
+        font-weight: 850;
+        text-align: center;
+      }
+
+      .growth-copy {
+        display: grid;
+        gap: 16px;
+      }
+
+      .ebit-plan {
+        margin-top: 26px;
+      }
+
+      .ebit-plan h3 {
+        margin-bottom: 14px;
+        font-size: 22px;
+      }
+
+      .ebit-plan table {
+        min-width: 680px;
+      }
+
+      .growth-item {
+        padding: 22px 24px;
+        border-left: 4px solid var(--blue);
+        background: var(--white);
+        box-shadow: inset 0 0 0 1px var(--line);
+      }
+
+      .growth-item h3 {
+        margin-bottom: 6px;
+        font-size: 22px;
+      }
+
+      .growth-item p {
+        margin-bottom: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .roadmap {
+        display: grid;
+        gap: 14px;
+      }
+
+      .road-row {
+        display: grid;
+        grid-template-columns: 160px repeat(3, minmax(0, 1fr));
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .road-cell {
+        min-height: 86px;
+        padding: 18px;
+        border-left: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.74);
+        line-height: 1.45;
+      }
+
+      .road-cell:first-child {
+        border-left: 0;
+        color: var(--white);
+        font-weight: 900;
+      }
+
+      .road-head .road-cell {
+        min-height: auto;
+        background: rgba(123, 216, 239, 0.12);
+        color: var(--cyan);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .model-grid,
+      .risk-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .model-card,
+      .risk-card {
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+      }
+
+      .model-card b {
+        display: block;
+        margin-bottom: 14px;
+        color: var(--blue);
+        font-size: 34px;
+      }
+
+      .model-card h3,
+      .risk-card h3 {
+        margin-bottom: 12px;
+        font-size: 22px;
+      }
+
+      .model-card p,
+      .risk-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .risk-card {
+        border-top: 4px solid var(--blue);
+      }
+
+      .risk-card strong {
+        display: block;
+        margin-top: 18px;
+        color: var(--mint);
+      }
+
+      .capital {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-bottom: 34px;
+      }
+
+      .capital-card {
+        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .capital-card span {
+        display: block;
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 13px;
+        font-weight: 850;
+        text-transform: uppercase;
+      }
+
+      .capital-card strong {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--white);
+        font-size: 33px;
+        line-height: 1.08;
+      }
+
+      .capital-card p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.55;
+      }
+
+      .closing {
+        padding: 34px;
+        border-radius: var(--radius);
+        background: var(--white);
+        color: var(--ink);
+      }
+
+      .closing p {
+        max-width: 980px;
+        margin-bottom: 0;
+        font-size: clamp(25px, 3.2vw, 42px);
+        font-weight: 850;
+        line-height: 1.12;
+      }
+
+      .source-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+      }
+
+      .source-strip img {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 10px 28px rgba(7, 27, 47, 0.08);
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        background: var(--white);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 980px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero::before {
+          width: 74px;
+        }
+
+        .hero-inner,
+        .section-head,
+        .scenario-layout,
+        .growth-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-inner {
+          min-height: auto;
+          padding-top: 54px;
+        }
+
+        .hero-metrics,
+        .thesis-grid,
+        .positioning,
+        .model-grid,
+        .risk-grid,
+        .capital,
+        .source-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .road-row {
+          grid-template-columns: 1fr;
+        }
+
+        .road-cell,
+        .road-cell:first-child {
+          border-left: 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .road-cell:first-child {
+          border-top: 0;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .inner {
+          padding: 58px 0;
+        }
+
+        .hero-metrics {
+          gap: 10px;
+        }
+
+        .metric,
+        .thesis,
+        .insight-panel,
+        .growth-chart,
+        .model-card,
+        .risk-card,
+        .capital-card,
+        .closing {
+          padding: 20px;
+        }
+
+        .bars {
+          height: 230px;
+        }
+
+        .footer-inner {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav" aria-label="Navigacija">
+        <a class="brand" href="#top">
+          <span class="brand-mark">OR</span>
+          <span>ORKA Investor Ready</span>
+        </a>
+        <div class="nav-links">
+          <a href="#teza">Teza</a>
+          <a href="#scenariji">Scenariji</a>
+          <a href="#rast">Rast</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#kapital">Kapital</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">Financijska projekcija · provedbeni roadmap</p>
+            <h1>ORKA Growth Case 2026-2028</h1>
+            <p class="hero-lead">
+              Investicijska priča fokusirana je na kontroliranu bazu troška,
+              dokaziv put do profitabilnosti i upside kroz konverziju portfelja,
+              productized delivery i AI/BSS sloj.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#scenariji">Pogledaj scenarije</a>
+              <a class="button secondary" href="#kapital">Namjena kapitala</a>
+            </div>
+            <div class="hero-metrics" aria-label="Ključne brojke">
+              <div class="metric">
+                <span>2026 realistični prihod</span>
+                <strong>524.517 EUR</strong>
+                <small>120k ostvareno + projekcija 05-12</small>
+              </div>
+              <div class="metric">
+                <span>2026 optimistični prihod</span>
+                <strong>715.025 EUR</strong>
+                <small>gornji potencijal istog perioda</small>
+              </div>
+              <div class="metric">
+                <span>Prag pokrića 05-12</span>
+                <strong>37,41%</strong>
+                <small>ponderirane vrijednosti portfelja</small>
+              </div>
+            </div>
+          </div>
+
+          <figure class="deck-preview">
+            <img src="assets/image1.png" alt="Naslovni slajd ORKA investitorskog pregleda" />
+            <figcaption class="preview-label">Investor-ready pregled · 2026-2028</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="teza">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Investicijska teza</p>
+              <h2 class="section-title">Kapital i disciplina provedbe trebaju ubrzati prodaju, isporuku i produktizaciju.</h2>
+            </div>
+            <p class="section-copy">
+              ORKA prelazi iz tradicionalnog ERP modela u AI-driven system integrator
+              s ERP coreom, uz veći udio ponavljajućih prihoda i standardiziranih isporuka.
+            </p>
+          </div>
+          <div class="thesis-grid">
+            <article class="thesis">
+              <span class="thesis-number">01</span>
+              <h3>Pretplate i održavanje</h3>
+              <p>Stabilnost, odnos s postojećim klijentima i baza za upsell bez proporcionalnog rasta troška.</p>
+            </article>
+            <article class="thesis">
+              <span class="thesis-number">02</span>
+              <h3>Core projekti</h3>
+              <p>ERP implementacije, integracije, custom aplikacije, mobile i eCommerce kao glavni izvor rezultata 2026.</p>
+            </article>
+            <article class="thesis">
+              <span class="thesis-number">03</span>
+              <h3>AI + BSS sloj</h3>
+              <p>Podaci, workflow, izvješća, automatizacija i operativna inteligencija kao platforma za 2028.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="scenariji">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">2026 baza i prag pokrića</p>
+              <h2 class="section-title">Realistični scenarij prelazi prag pokrića već u modeliranom razdoblju 05-12.</h2>
+            </div>
+            <p class="section-copy">
+              Puna realizacija portfelja nije uvjet za break-even. Glavna poluga je
+              konverzija ugovorenih projekata i komercijalnog pipelinea.
+            </p>
+          </div>
+          <div class="scenario-layout">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Scenarij</th>
+                    <th>Prihod 2026</th>
+                    <th>Projekcija 05-12</th>
+                    <th>Rashodi 05-12</th>
+                    <th>Rezultat 05-12</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pesimistični</td>
+                    <td>458.367 EUR</td>
+                    <td>338.367 EUR</td>
+                    <td>350.960 EUR</td>
+                    <td class="negative">-12.593 EUR</td>
+                    <td><span class="status warn">Ispod praga</span></td>
+                  </tr>
+                  <tr>
+                    <td>Realistični</td>
+                    <td>524.517 EUR</td>
+                    <td>404.517 EUR</td>
+                    <td>350.960 EUR</td>
+                    <td class="positive">+53.557 EUR</td>
+                    <td><span class="status">Iznad praga</span></td>
+                  </tr>
+                  <tr>
+                    <td>Optimistični</td>
+                    <td>715.025 EUR</td>
+                    <td>595.025 EUR</td>
+                    <td>350.960 EUR</td>
+                    <td class="positive">+244.065 EUR</td>
+                    <td><span class="status">Iznad praga</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <aside class="insight-panel">
+              <h3>Ključna interpretacija</h3>
+              <p>
+                Recurring prihod pokriva približno 23% troškovne baze razdoblja
+                05-12, a dodatni upside dolazi bez povećanja rashoda u istom modelu.
+              </p>
+              <div class="mini-metrics">
+                <div class="mini-metric"><span>Mjesečni rashod</span><strong>43.870 EUR</strong></div>
+                <div class="mini-metric"><span>Minimalni projektni prihod</span><strong>270.585 EUR</strong></div>
+                <div class="mini-metric"><span>Dodatni upside</span><strong>+190.508 EUR</strong></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Pozicioniranje</p>
+              <h2 class="section-title">Od ERP isporuke prema skalabilnom operativnom sustavu.</h2>
+            </div>
+            <p class="section-copy">
+              Cilj je veći udio ponavljajućih prihoda, standardizirane isporuke i
+              rast bez proporcionalnog rasta troška.
+            </p>
+          </div>
+          <div class="positioning">
+            <article class="pillar">
+              <strong>01</strong>
+              <h3>Recurring baza</h3>
+              <p>Pretplate, održavanje i podrška stvaraju stabilnost i prostor za upsell.</p>
+            </article>
+            <article class="pillar">
+              <strong>02</strong>
+              <h3>Productized delivery</h3>
+              <p>Mini rješenja, ponovljive ponude i jasni acceptance kriteriji ubrzavaju isporuku.</p>
+            </article>
+            <article class="pillar">
+              <strong>03</strong>
+              <h3>AI/BSS platforma</h3>
+              <p>Podaci, automatizacija i operativna inteligencija povećavaju maržu i ponovljivost.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="rast">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Plan rasta 2027-2028</p>
+              <h2 class="section-title">Plan za 2027. i 2028. ostaje stabilan; 2026. je most validacije.</h2>
+            </div>
+            <p class="section-copy">
+              Rast se oslanja na sales engine, productized delivery, partner kanale i
+              veći recurring udio. Optimistični scenarij zadržava istu logiku, ali s
+              boljom konverzijom i bržom produktizacijom.
+            </p>
+          </div>
+          <div class="growth-grid">
+            <div class="growth-chart" aria-label="Graf plana prihoda 2026 do 2028">
+              <div class="bars">
+                <div class="bar-group">
+                  <div class="bar y2026 realistic">524k</div>
+                  <div class="bar optimistic y2026">715k</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar y2027 realistic">900k</div>
+                  <div class="bar optimistic y2027">1,2M</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar y2028 realistic">1,4M</div>
+                  <div class="bar optimistic y2028">2,0M</div>
+                </div>
+              </div>
+              <div class="bar-labels">
+                <span>2026</span>
+                <span>2027</span>
+                <span>2028</span>
+              </div>
+            </div>
+            <div class="growth-copy">
+              <article class="growth-item">
+                <h3>2026 · stabilizacija</h3>
+                <p>Ukupan prihod 524,5k EUR u realističnom scenariju; cash kontrola i konverzija portfelja.</p>
+              </article>
+              <article class="growth-item">
+                <h3>2027 · skaliranje</h3>
+                <p>Realistični plan 900k EUR, optimistični 1,2M EUR kroz prodaju, isporuku i partnere.</p>
+              </article>
+              <article class="growth-item">
+                <h3>2028 · platformizacija</h3>
+                <p>Realistični plan 1,4M EUR, optimistični 2,0M EUR uz AI/BSS sloj i veći recurring udio.</p>
+              </article>
+            </div>
+          </div>
+          <div class="ebit-plan">
+            <h3>EBIT plan po scenariju</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Godina</th>
+                    <th>Realistični prihod</th>
+                    <th>Realistični EBIT</th>
+                    <th>Optimistični prihod</th>
+                    <th>Optimistični EBIT</th>
+                    <th>EBIT marža</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2026</td>
+                    <td>524.517 EUR</td>
+                    <td class="positive">+53.557 EUR</td>
+                    <td>715.025 EUR</td>
+                    <td class="positive">+244.065 EUR</td>
+                    <td>13,2% / 41,0%</td>
+                  </tr>
+                  <tr>
+                    <td>2027</td>
+                    <td>900.000 EUR</td>
+                    <td class="positive">+400.000 EUR</td>
+                    <td>1.200.000 EUR</td>
+                    <td class="positive">+600.000 EUR</td>
+                    <td>44,4% / 50,0%</td>
+                  </tr>
+                  <tr>
+                    <td>2028</td>
+                    <td>1.400.000 EUR</td>
+                    <td class="positive">+750.000 EUR</td>
+                    <td>2.000.000 EUR</td>
+                    <td class="positive">+1.100.000 EUR</td>
+                    <td>53,6% / 55,0%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="roadmap">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Provedbeni roadmap do kraja 2026.</p>
+              <h2 class="section-title">Projekcija se pretvara u operativni sustav upravljanja.</h2>
+            </div>
+            <p class="section-copy">
+              Svaki cilj ima vlasnika, ritam i metriku. Fokus je na prodaji,
+              isporuci, proizvodu, recurringu i tjednoj financijskoj kontroli.
+            </p>
+          </div>
+          <div class="roadmap">
+            <div class="road-row road-head">
+              <div class="road-cell">Područje</div>
+              <div class="road-cell">0-30 dana</div>
+              <div class="road-cell">31-90 dana</div>
+              <div class="road-cell">Do 31.12.2026.</div>
+            </div>
+            <div class="road-row">
+              <div class="road-cell">Prodaja</div>
+              <div class="road-cell">Jedinstveni pipeline, statusi, vlasnici prilika</div>
+              <div class="road-cell">Weekly deal review, prioritet A/B/C</div>
+              <div class="road-cell">Konverzija realističnog scenarija</div>
+            </div>
+            <div class="road-row">
+              <div class="road-cell">Isporuka</div>
+              <div class="road-cell">PMO tablica svih aktivnih isporuka</div>
+              <div class="road-cell">Milestone naplata i acceptance kriteriji</div>
+              <div class="road-cell">Bez širenja opsega bez ponude</div>
+            </div>
+            <div class="road-row">
+              <div class="road-cell">Proizvod</div>
+              <div class="road-cell">ORKA Core prioriteti i UI/UX backlog</div>
+              <div class="road-cell">Mini rješenja i ponovljive ponude</div>
+              <div class="road-cell">2-3 productized paketa</div>
+            </div>
+            <div class="road-row">
+              <div class="road-cell">Financije</div>
+              <div class="road-cell">Cash dashboard svaki tjedan</div>
+              <div class="road-cell">Naplata i marža po projektu</div>
+              <div class="road-cell">Mjesečni RDG i forecast</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Operativni model</p>
+              <h2 class="section-title">Upravljanje se svodi na tri ritma: prodaja, isporuka i financije.</h2>
+            </div>
+            <p class="section-copy">
+              Tjedni pipeline i delivery blockers, mjesečni RDG i forecast, te
+              kvartalna strategija za produktizaciju i partnere.
+            </p>
+          </div>
+          <div class="model-grid">
+            <article class="model-card">
+              <b>A</b>
+              <h3>Sales governance</h3>
+              <p>Pipeline, ponude, decision log, datum zatvaranja, vjerojatnost i sljedeći korak.</p>
+            </article>
+            <article class="model-card">
+              <b>B</b>
+              <h3>Delivery governance</h3>
+              <p>Milestonei, kapacitet, acceptance kriteriji, promjene opsega i naplata.</p>
+            </article>
+            <article class="model-card">
+              <b>C</b>
+              <h3>Finance governance</h3>
+              <p>Cash, potraživanja, marža, runway, forecast i scenarijska kontrola.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Rizici i kontrole</p>
+              <h2 class="section-title">Rizici postoje, ali su upravljivi uz tjedni ritam prodaje, isporuke i financija.</h2>
+            </div>
+            <p class="section-copy">
+              Fokus kontrola je na naplati, opsegu isporuke, ovisnosti o EU
+              projektima, kapacitetu i brzini produktizacije.
+            </p>
+          </div>
+          <div class="risk-grid">
+            <article class="risk-card">
+              <h3>Kašnjenje naplate</h3>
+              <p>Utjecaj na cash flow i runway.</p>
+              <strong>Tjedni AR review, avansi i milestone naplata.</strong>
+            </article>
+            <article class="risk-card">
+              <h3>Preširok opseg isporuke</h3>
+              <p>Pad marže kroz neplaćeni scope creep.</p>
+              <strong>Change request pravilo i acceptance kriteriji.</strong>
+            </article>
+            <article class="risk-card">
+              <h3>Nedovoljna produktizacija</h3>
+              <p>Sporije skaliranje i slabija ponovljivost.</p>
+              <strong>2-3 ponovljiva paketa do kraja 2026.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="kapital">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Namjena kapitala</p>
+              <h2 class="section-title">Kapital treba ubrzati provedbu plana, ne zamijeniti disciplinu poslovanja.</h2>
+            </div>
+            <p class="section-copy">
+              Investicijska odluka nije samo financiranje. To je ubrzanje
+              operativnog plana koji već ima prag pokrića, scenarije i ritam kontrole.
+            </p>
+          </div>
+          <div class="capital">
+            <article class="capital-card">
+              <span>Working capital</span>
+              <strong>Cash buffer</strong>
+              <p>Stabilnost isporuke i naplate dok se konvertira portfelj.</p>
+            </article>
+            <article class="capital-card">
+              <span>Sales engine</span>
+              <strong>Pipeline</strong>
+              <p>Brža konverzija, partner kanali i jasniji komercijalni ritam.</p>
+            </article>
+            <article class="capital-card">
+              <span>Productization</span>
+              <strong>ORKA Core + AI/BSS</strong>
+              <p>Veća marža, ponovljivost i platformski potencijal za 2028.</p>
+            </article>
+          </div>
+          <div class="closing">
+            <p>Zaključak: 2026. stabilizira model, 2027. skalira prodaju i isporuku, 2028. otvara platformski rast.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Izvorni materijal</p>
+              <h2 class="section-title">Sažetak je izveden iz prezentacije i prilagođen web prikazu za klijentski sastanak.</h2>
+            </div>
+            <p class="section-copy">
+              Donje sličice služe kao brzi trag prema izvornom decku. Glavni web
+              sadržaj je prepisan u HTML radi čitljivosti i profesionalnog prikaza.
+            </p>
+          </div>
+          <div class="source-strip">
+            <img src="assets/image2.png" alt="Investicijski sažetak" />
+            <img src="assets/image6.png" alt="Sažetak scenarija" />
+            <img src="assets/image10.png" alt="Plan rasta 2027-2028" />
+            <img src="assets/image15.png" alt="Zaključak prezentacije" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <strong>ORKA d.o.o. · investor-ready one pager</strong>
+        <span>Izvor: ORKA strateški pregled v6.1, 24.04.2026. · povjerljivo</span>
+      </div>
+    </footer>
+  </body>
+</html>
