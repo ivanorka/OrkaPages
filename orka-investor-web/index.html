@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ORKA d.o.o. | Investor Ready One Pager</title>
+    <title>ORKA Growth 2008</title>
     <meta
       name="description"
       content="Investor-ready one pager za ORKA d.o.o. s financijskim scenarijima, roadmapom i provedbenim modelom 2026-2028."
@@ -99,21 +99,30 @@
         color: var(--white);
       }
 
+      .home-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 0 12px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        color: var(--cyan);
+        font-weight: 850;
+      }
+
+      .home-link:hover {
+        border-color: rgba(123, 216, 239, 0.72);
+        color: var(--white);
+      }
+
       .hero {
         position: relative;
         overflow: hidden;
         color: var(--white);
         background:
-          radial-gradient(circle at 88% 12%, rgba(17, 120, 154, 0.55), transparent 34%),
+          linear-gradient(90deg, rgba(17, 120, 154, 0.32) 0 12px, transparent 12px),
+          radial-gradient(circle at 84% 16%, rgba(120, 222, 240, 0.28), transparent 31%),
           linear-gradient(135deg, var(--navy), var(--navy-2));
-      }
-
-      .hero::before {
-        position: absolute;
-        inset: 0 auto 0 0;
-        width: clamp(120px, 12vw, 230px);
-        background: linear-gradient(180deg, #147b9b, #0f6f8e);
-        content: "";
       }
 
       .hero-inner {
@@ -784,10 +793,6 @@
           display: none;
         }
 
-        .hero::before {
-          width: 74px;
-        }
-
         .hero-inner,
         .section-head,
         .scenario-layout,
@@ -858,11 +863,12 @@
   <body>
     <header class="topbar">
       <nav class="nav" aria-label="Navigacija">
-        <a class="brand" href="#top">
+        <a class="brand" href="../">
           <span class="brand-mark">OR</span>
           <span>ORKA Investor Ready</span>
         </a>
         <div class="nav-links">
+          <a class="home-link" href="../">Početna</a>
           <a href="#teza">Teza</a>
           <a href="#scenariji">Scenariji</a>
           <a href="#rast">Rast</a>
@@ -877,7 +883,7 @@
         <div class="hero-inner">
           <div>
             <p class="eyebrow">Financijska projekcija · provedbeni roadmap</p>
-            <h1>ORKA Growth Case 2026-2028</h1>
+            <h1>ORKA Growth 2008</h1>
             <p class="hero-lead">
               Investicijska priča fokusirana je na kontroliranu bazu troška,
               dokaziv put do profitabilnosti i upside kroz konverziju portfelja,
